@@ -34,8 +34,8 @@
                 android:id="@+id/etUserId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter User ID"
-                android:inputType="number"
+                android:hint="Phone Number"
+                android:inputType="phone"
                 android:layout_gravity="center"/>
 
             <EditText
