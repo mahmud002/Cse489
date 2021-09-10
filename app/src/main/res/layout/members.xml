@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_margin="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tour Members"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+    >
+        <EditText
+            android:id="@+id/snum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:textSize="24dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/sbtn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Search to Add Member"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/button"/>
+        <ListView
+            android:id="@+id/lvmembers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        android:background="#00aaff">
+        <TextView
+            android:id="@+id/btnCreate_new"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Create_new"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/btnmytour"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="My Tour"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/btnadd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Add Member"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

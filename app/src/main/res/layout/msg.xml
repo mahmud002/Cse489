@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6FB7D8"
+    android:background="@drawable/b"
     android:orientation="vertical"
     android:padding="15dp"
     android:layout_margin="15dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Upcoming Tours"
+        android:text="Tour Members"
         android:textSize="24dp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -20,11 +20,34 @@
         android:orientation="vertical"
         android:layout_margin="8dp"
         android:padding="16dp"
-        android:background="#eeeeee">
-        <ListView
-            android:id="@+id/lvTours"
+       >
+        <EditText
+            android:id="@+id/msgField"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="50dp"
+            android:hint="Enter your Message"
+            android:textSize="24dp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/sendMsg"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Send"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <ListView
+            android:id="@+id/lvmsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+
+
+
+
 
     </LinearLayout>
 
@@ -32,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="41dp"
         android:orientation="horizontal"
-        android:background="#00aaff">
+        android:background="#F8F9FA">
         <TextView
             android:id="@+id/btnCreate_new"
             android:layout_width="0dp"
@@ -41,35 +64,29 @@
             android:text="Create_new"
             android:textStyle="bold"
             android:gravity="center"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="@drawable/button"
+            />
         <TextView
-            android:id="@+id/btnTourCost"
+            android:id="@+id/btnmytour"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Tour Cost"
+            android:text="My Tour"
             android:textStyle="bold"
             android:gravity="center"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="@drawable/button"/>
         <TextView
-            android:id="@+id/btnBlog"
+            android:id="@+id/btnadd"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Blog"
+            android:text="Add Member"
             android:textStyle="bold"
             android:gravity="center"
-            android:clickable="true" />
-
-        <TextView
-            android:id="@+id/btnGallery"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Gallery"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="@drawable/button"/>
     </LinearLayout>
 </LinearLayout>
 

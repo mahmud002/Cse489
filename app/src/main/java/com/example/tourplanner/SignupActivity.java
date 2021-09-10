@@ -42,7 +42,7 @@ public class SignupActivity extends AppCompatActivity {
     String password;
     String connPassword;
     String errorMsg="";
-    String url="http://192.168.43.136/tourPlanner/insert.php";
+    String url="http://192.168.42.158/tourPlanner/insert.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -2,15 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/b"
+    android:background="#EFF0F1"
     android:orientation="vertical"
     android:padding="15dp"
     android:layout_margin="15dp">
     <TextView
-        android:id="@+id/sHedding"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="New Account Create"
+        android:text="Tour Edit"
         android:textSize="24dp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -21,7 +20,7 @@
         android:orientation="vertical"
         android:layout_margin="8dp"
         android:padding="16dp"
-        >
+        android:background="#eeeeee">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,41 +28,20 @@
             android:orientation="horizontal"
             android:layout_marginBottom="4dp">
             <TextView
-                android:id="@+id/labelName"
+                android:id="@+id/labeltitle"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Fast Name"
+                android:text="Title"
                 android:textStyle="bold"
                 android:textColor="#000000" />
             <EditText
-                android:id="@+id/elName"
+                android:id="@+id/eltitle"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="4dp"
-            android:orientation="horizontal">
-            <TextView
-
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:text="Last Name"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-            <EditText
-                android:id="@+id/ellName"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="5dp" />
-
-        </LinearLayout>
-
 
 
 
@@ -73,14 +51,14 @@
             android:layout_marginBottom="4dp"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/labelEmail"
+                android:id="@+id/labelPlace"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Email"
+                android:text="Place"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
             <EditText
-                android:id="@+id/elEmail"
+                android:id="@+id/elPlace"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -93,21 +71,21 @@
             android:layout_marginBottom="4dp"
             android:orientation="horizontal">
             <TextView
-                android:id="@+id/labelPhone"
+                android:id="@+id/labelDescription"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Phone"
+                android:text="Description"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
             <EditText
-                android:id="@+id/elPhone"
+                android:id="@+id/elDescription"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:inputType="phone" />
-
+                android:layout_height="match_parent"
+               />
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,20 +93,20 @@
             android:layout_marginBottom="4dp"
             android:orientation="horizontal">
             <TextView
-
+                android:id="@+id/DateTime"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Password"
+                android:text="Date"
+                android:hint="yy-mm-dd"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/elDataTime"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:inputType="numberPassword" />
-
+                android:layout_height="match_parent"
+                android:inputType="date"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -136,21 +114,24 @@
             android:layout_marginBottom="4dp"
             android:orientation="horizontal">
             <TextView
-
+                android:id="@+id/link"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Confirm Password"
+                android:text="Drive Link"
+                android:hint="yy-mm-dd"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
             <EditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/elLink"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:inputType="numberPassword" />
-
+                android:layout_height="match_parent"
+                android:inputType="text"/>
         </LinearLayout>
+
+
+
 
 
 
@@ -161,17 +142,16 @@
         android:layout_width="match_parent"
         android:layout_height="41dp"
         android:orientation="horizontal"
-       >
-
+        >
         <TextView
-            android:id="@+id/btnBack"
+            android:id="@+id/btCancel"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:clickable="true"
-            android:gravity="center"
+            android:layout_height="match_parent"
             android:text="Cancel"
             android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
             android:background="@drawable/button"/>
 
         <TextView
@@ -183,8 +163,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:clickable="true"
-            android:background="@drawable/button"
-            />
+            android:background="@drawable/button"/>
     </LinearLayout>
 </LinearLayout>
 

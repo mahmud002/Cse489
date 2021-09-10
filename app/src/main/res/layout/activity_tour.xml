@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_margin="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="All Tour"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+       >
+        <ListView
+            android:id="@+id/lvEvents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/btnCreate_new"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="User Profile"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button"/>
+        <TextView
+            android:id="@+id/btnmytour"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="My Tour"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/button"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Exit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

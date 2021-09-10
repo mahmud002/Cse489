@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/b"
     android:orientation="vertical"
     android:padding="15dp"
     android:layout_margin="15dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Tour Create"
+        android:text="Tour Details"
         android:textSize="24dp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -20,7 +20,7 @@
         android:orientation="vertical"
         android:layout_margin="8dp"
         android:padding="16dp"
-        android:background="#eeeeee">
+    >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,13 +34,14 @@
                 android:text="Title"
                 android:textStyle="bold"
                 android:textColor="#000000" />
-            <EditText
-                android:id="@+id/eltitle"
+            <TextView
+                android:id="@+id/stitle"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 />
         </LinearLayout>
+
 
 
 
@@ -57,14 +58,53 @@
                 android:text="Place"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
-            <EditText
-                android:id="@+id/elPlace"
+            <TextView
+                android:id="@+id/sPlace"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="email"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/semail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="phone"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/sphone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -77,8 +117,8 @@
                 android:text="Description"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
-            <EditText
-                android:id="@+id/elDescription"
+            <TextView
+                android:id="@+id/sDescription"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -97,16 +137,17 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:text="Date"
-                android:hint="yy-mm-dd"
+
                 android:textStyle="bold"
                 android:textColor="#000000"/>
-            <EditText
-                android:id="@+id/elDataTime"
+            <TextView
+                android:id="@+id/sData"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:layout_height="match_parent"
                 android:inputType="date"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,23 +158,69 @@
                 android:id="@+id/link"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Drive Link"
+                android:text="link"
                 android:hint="yy-mm-dd"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
-            <EditText
+            <TextView
                 android:id="@+id/elLink"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:layout_height="match_parent"
                 android:inputType="text"/>
+
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
+            android:gravity="center"
+            android:orientation="vertical"
+            >
 
+            <TextView
+                android:id="@+id/btnmembers"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button2"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Members"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/btnmsg"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:text="Message Box"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/button2"/>
+            <TextView
+                android:id="@+id/btnDrive"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:text="Drive"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/button2"/>
+            <TextView
+                android:id="@+id/btnAlarm"
+                android:layout_width="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:text="Set Alarm"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/button2"/>
 
-
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -144,27 +231,41 @@
         android:orientation="horizontal"
         >
         <TextView
-            android:id="@+id/btCancel"
+            android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Cancel"
+            android:text="Back"
             android:textStyle="bold"
             android:gravity="center"
             android:clickable="true"
+            android:layout_marginRight="4dp"
             android:background="@drawable/button"/>
-
         <TextView
-            android:id="@+id/btnSave"
+            android:id="@+id/btnEdit"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Save"
+            android:text="Edit"
             android:textStyle="bold"
             android:gravity="center"
             android:clickable="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button"/>
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginRight="4dp"
             android:background="@drawable/button"/>
     </LinearLayout>
+
 </LinearLayout>
 
 

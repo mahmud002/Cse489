@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6FB7D8"
+    android:background="#DFE5E8"
     android:orientation="vertical"
     android:padding="15dp"
     android:layout_margin="15dp">
     <TextView
+        android:id="@+id/sHedding"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Pay Cost"
+        android:text="Profile"
         android:textSize="24dp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -28,44 +29,20 @@
             android:orientation="horizontal"
             android:layout_marginBottom="4dp">
             <TextView
-
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-
-                android:textSize="16dp"
-                android:text="From"
-                android:gravity="center"
+                android:id="@+id/labelName"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Fast Name"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+            <EditText
+                android:id="@+id/elName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
                 />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
         </LinearLayout>
 
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="4dp"
-            android:orientation="horizontal">
-            <TextView
-
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-
-                android:textSize="16dp"
-                android:text="To"
-                android:gravity="center"
-                />
-
-            <Spinner
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -75,19 +52,64 @@
 
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:text="Amount"
+                android:text="Last Name"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
             <EditText
+                android:id="@+id/ellName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp" />
 
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/elEmail"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/labelPhone"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Phone"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/elPhone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:inputType="phone" />
 
+        </LinearLayout>
 
+=
 
 
 
@@ -97,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="41dp"
         android:orientation="horizontal"
-        android:background="#00aaff">
+        >
         <TextView
             android:id="@+id/btCancel"
             android:layout_width="0dp"
@@ -106,8 +128,18 @@
             android:text="Cancel"
             android:textStyle="bold"
             android:gravity="center"
-            android:clickable="true" />
-
+            android:clickable="true"
+            android:background="@drawable/button"/>
+        <TextView
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/button"/>
         <TextView
             android:id="@+id/btnSave"
             android:layout_width="0dp"
@@ -116,7 +148,8 @@
             android:text="Save"
             android:textStyle="bold"
             android:gravity="center"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="@drawable/button"/>
     </LinearLayout>
 </LinearLayout>
 
